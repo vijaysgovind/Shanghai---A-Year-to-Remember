@@ -44,7 +44,7 @@
         /* Page Layout (for Print) */
         @page {
             size: 360pt 576pt;
-            margin: 50.4pt 28.8pt 50.4pt 50.4pt;
+            margin: 28.8pt 28.8pt 28.8pt 28.8pt;
         }
 
         /* Component Styles */
@@ -54,23 +54,22 @@
         }
 
         .title-page .main-title {
-            margin: 0;
-            text-indent: 2em;
+            margin: 0 0 25.3% 0;
+            text-indent: 0em;
             font-size: 3.1rem;
             font-weight: bold;
-            letter-spacing: -0.35pt;
         }
 
         .title-page .subtitle {
-            margin: 0 0 1.26% 0;
-            text-indent: 2em;
-            font-size: 1.0rem;
+            margin: 0 0 12.6% 0;
+            text-indent: 0em;
+            font-size: 1.5rem;
             font-style: italic;
         }
 
         .title-page .author {
             margin: 0 0 2.53% 0;
-            text-indent: 2em;
+            text-indent: 0em;
             font-size: 2.9rem;
         }
 
@@ -121,7 +120,7 @@
         .toc-entry {
             margin: 0 0 1.05% 0;
             text-indent: 2em;
-            text-align: justify;
+            text-align: left;
             font-size: 1.0rem;
         }
 
@@ -141,26 +140,22 @@
         .styled-list li {
             margin-bottom: 1.26%;
             padding-left: 7.69pt;
-            text-align: justify;
+            text-align: left;
             font-size: 1.0rem;
         }
 
         .dedication {
-            text-align: justify;
+            text-align: left;
             font-style: italic;
             font-size: 1.0rem;
         }
 
         .dedication .line {
-            margin: 0 0 1.26% 12.82%;
-            text-indent: 2em;
+            text-indent: 0.5em;
         }
 
         .dedication .verse {
-            margin: 0 0 1.26% 12.82%;
-            text-indent: 4em;
-            line-height: 2;
-            /* 200% */
+            text-indent: 2em;
         }
 
         .wechat-message {
@@ -170,7 +165,7 @@
             border: 1.5pt solid #5b9bd5;
             padding: 1pt 4pt;
             font-size: 1rem;
-            background-color: #e4f0fb;
+            color: #000000;
             text-indent: 0;
             text-align: left;
             font-family: Consolas, "Courier New", Courier, monospace;
@@ -228,7 +223,7 @@
             li,
             a {
                 color: #000 !important;
-                background: none !important;
+                /* background: none !important; */
             }
 
             /* Ensure each main section starts on a new page. */
@@ -243,7 +238,7 @@
                 content: " (" attr(href) ")";
                 font-size: 0.8em;
                 font-style: italic;
-                color: #555;
+                ` color: #555;
                 /* Slightly lighter to de-emphasize */
             }
 
@@ -264,7 +259,7 @@
     </header>
 
     <main>
-        <section id="_Toc51365543">
+        <section id="copy-right">
             <h2 class="section-heading">Copyright Notice</h2>
             <p class="paragraph">&copy; 2020 Vijay Menon. All rights reserved.</p>
             <p class="paragraph">
@@ -281,53 +276,52 @@
 
         <section id="toc">
             <h2 class="section-heading">Table of Contents</h2>
-            <p class="toc-entry"><a href="#_Toc51365543">Copyright Notice</a></p>
-            <p class="toc-entry"><a href="#_Toc51365544">Foreword, Disclaimer, Whatever</a></p>
-            <p class="toc-entry"><a href="#_Toc51365545">Second Edition Updates</a></p>
+            <p class="toc-entry"><a href="#copy-right">Copyright Notice</a></p>
+            <p class="toc-entry"><a href="#foreword-disc-etc">Foreword, Disclaimer, Whatever</a></p>
+            <p class="toc-entry"><a href="#second-ed-update">Second Edition Updates</a></p>
             <p class="toc-entry"><a href="#post-second-edition-updates">Post Second Edition Updates</a></p>
-            <p class="toc-entry"><a href="#_Toc51365546">A Dedication</a></p>
-            <p class="toc-entry"><a href="#_Toc51365547">Remembering Our Inspiration</a></p>
-            <p class="toc-entry"><a href="#_Toc51365548">Part 1 – A Helping Hand</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365549">Chapter 1.&nbsp;&nbsp;&nbsp;A Chance Encounter</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365550">Chapter 2.&nbsp;&nbsp;&nbsp;Back-Breaking Help</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365551">Chapter 3.&nbsp;&nbsp;&nbsp;The Train Ride</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365552">Chapter 4.&nbsp;&nbsp;&nbsp;Talking About Life</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365553">Chapter 5.&nbsp;&nbsp;&nbsp;The Incident</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365554">Chapter 6.&nbsp;&nbsp;&nbsp;Heading Back Home</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365555">Chapter 7.&nbsp;&nbsp;&nbsp;She Lives on the
+            <p class="toc-entry"><a href="#dedication">A Dedication</a></p>
+            <p class="toc-entry"><a href="#part-1-helping-hand">Part 1 – A Helping Hand</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-1">Chapter 1.&nbsp;&nbsp;&nbsp;A Chance Encounter</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-2">Chapter 2.&nbsp;&nbsp;&nbsp;Back-Breaking Help</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-3">Chapter 3.&nbsp;&nbsp;&nbsp;The Train Ride</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-4">Chapter 4.&nbsp;&nbsp;&nbsp;Talking About Life</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-5">Chapter 5.&nbsp;&nbsp;&nbsp;The Incident</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-6">Chapter 6.&nbsp;&nbsp;&nbsp;Heading Back Home</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-7">Chapter 7.&nbsp;&nbsp;&nbsp;She Lives on the
                     13<sup>th</sup> Floor</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365556">Chapter 8.&nbsp;&nbsp;&nbsp;The Grass is Greener</a>
+            <p class="toc-chapter-entry"><a href="#chapter-8">Chapter 8.&nbsp;&nbsp;&nbsp;The Grass is Greener</a>
             </p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365557">Chapter 9.&nbsp;&nbsp;&nbsp;Heading Back Home</a></p>
-            <p class="toc-entry"><a href="#_Toc51365558">Part 2 – Wise Men Say</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365559">Chapter 10.&nbsp;&nbsp;The Cure for A Hangover</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365560">Chapter 11.&nbsp;&nbsp;So Jaded…</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365561">Chapter 12.&nbsp;&nbsp;Sparks in Xintiandi</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365562">Chapter 13.&nbsp;&nbsp;The Tango</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365563">Chapter 14.&nbsp;&nbsp;Penny for Your Thoughts</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365564">Chapter 15.&nbsp;&nbsp;Making Pancakes Her Way</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365565">Chapter 16.&nbsp;&nbsp;One More Request</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365566">Chapter 17.&nbsp;&nbsp;An Evening’s Worth of Text
+            <p class="toc-chapter-entry"><a href="#chapter-9">Chapter 9.&nbsp;&nbsp;&nbsp;Heading Back Home</a></p>
+            <p class="toc-entry"><a href="#part-2-wise-men-say">Part 2 – Wise Men Say</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-10">Chapter 10.&nbsp;&nbsp;The Cure for A Hangover</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-11">Chapter 11.&nbsp;&nbsp;So Jaded…</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-12">Chapter 12.&nbsp;&nbsp;Sparks in Xintiandi</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-13">Chapter 13.&nbsp;&nbsp;The Tango</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-14">Chapter 14.&nbsp;&nbsp;Penny for Your Thoughts</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-15">Chapter 15.&nbsp;&nbsp;Making Pancakes Her Way</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-16">Chapter 16.&nbsp;&nbsp;One More Request</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-17">Chapter 17.&nbsp;&nbsp;An Evening’s Worth of Text
                     Messages</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365567">Chapter 18.&nbsp;&nbsp;Something Like A Dinner Date</a>
+            <p class="toc-chapter-entry"><a href="#chapter-18">Chapter 18.&nbsp;&nbsp;Something Like A Dinner Date</a>
             </p>
-            <p class="toc-entry"><a href="#_Toc51365568">Part 3 – All Good Things…</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365569">Chapter 19.&nbsp;&nbsp;Fast Forward and Rewind</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365570">Chapter 20.&nbsp;&nbsp;The Day After the Dinner
+            <p class="toc-entry"><a href="#part-3-all-good-things">Part 3 – All Good Things…</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-19">Chapter 19.&nbsp;&nbsp;Fast Forward and Rewind</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-20">Chapter 20.&nbsp;&nbsp;The Day After the Dinner
                     Date</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365571">Chapter 21.&nbsp;&nbsp;The Long Walk</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365572">Chapter 22.&nbsp;&nbsp;The Long Text Message</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365573">Chapter 23.&nbsp;&nbsp;Waiting for A Response</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365574">Chapter 24.&nbsp;&nbsp;Different Stages of
+            <p class="toc-chapter-entry"><a href="#chapter-21">Chapter 21.&nbsp;&nbsp;The Long Walk</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-22">Chapter 22.&nbsp;&nbsp;The Long Text Message</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-23">Chapter 23.&nbsp;&nbsp;Waiting for A Response</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-24">Chapter 24.&nbsp;&nbsp;Different Stages of
                     Heartbreak</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365575">Chapter 25.&nbsp;&nbsp;Insanity Comes Calling</a></p>
-            <p class="toc-chapter-entry"><a href="#_Toc51365576">Chapter 26.&nbsp;&nbsp;Carpe Diem</a></p>
-            <p class="toc-entry"><a href="#_Toc51365577">Epilogue</a></p>
-            <p class="toc-entry"><a href="#_Toc51365578">Gratitudes</a></p>
-            <p class="toc-entry"><a href="#_Toc51365581">About The Author</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-25">Chapter 25.&nbsp;&nbsp;Insanity Comes Calling</a></p>
+            <p class="toc-chapter-entry"><a href="#chapter-26">Chapter 26.&nbsp;&nbsp;Carpe Diem</a></p>
+            <p class="toc-entry"><a href="#epilouge">Epilogue</a></p>
+            <p class="toc-entry"><a href="#gratitudes">Gratitudes</a></p>
+            <p class="toc-entry"><a href="#about-vijay">About The Author</a></p>
         </section>
 
-        <section id="_Toc51365544">
+        <section id="foreword-disc-etc">
             <h2 class="section-heading">Foreword, Disclaimer, Whatever</h2>
             <p class="disclaimer">
                 Disclaimer: This is a work of fiction. Names, characters, places, and incidents either are the products
@@ -382,7 +376,7 @@
                 quality in the book.</p>
         </section>
 
-        <section id="_Toc51365545">
+        <section id="second-ed-update">
             <h2 class="section-heading">Second Edition Updates</h2>
             <p class="paragraph">August 28<sup>th</sup> 2020</p>
             <p class="paragraph">I have also made some minor update to the book, to correct my terrible grammar and give
@@ -411,21 +405,30 @@
             <p class="signature">Vijay Menon,</p>
             <p class="signature">Somewhere in Japan</p>
 
-            <h3 id="post-second-edition-updates" class="section-heading">Post Second Edition Updates</h3>
-            <p class="paragraph">PS: I hated Part 4 so much that I deleted it. I rushed it and It came out... untrue to
-                the original form. I am not going to continue this story beyond what was published in the first edition.
-            </p>
-            <p class="paragraph">And I lost all the versions of manuscript during my cloud migration from one big
-                service provider (whose OS and presentation tools our corparate world depends on) to another big service
-                provider (whose search and email service a lot of us use) on a computer named after a fruit. Thankfully
-                the platform where I tried to sell this book and recover the cost of my first macbook air, gave back the
-                updated manuscript. Thankful to the universe for small mercies and for me to be nerd enough to make some
-                edits using an IDE (on Linux).</p>
-            <p class="signature">Vijay Menon,</p>
-            <p class="signature">Still, Somewhere in Japan, but with a PR now</p>
         </section>
 
-        <section id="_Toc51365546">
+        <section id="post-second-edition-updates">
+            <h2 class="section-heading">Post Second Edition Updates</h3>
+                <p class="paragraph">PS: I hated Part 4 so much that I deleted it. I rushed it and It came out... untrue
+                    to
+                    the original form. I am not going to continue this story beyond what was published in the first
+                    edition.
+                </p>
+                <p class="paragraph">And I lost all the versions of manuscript during my cloud migration from one big
+                    service provider (whose OS and presentation tools our corparate world depends on) to another big
+                    service
+                    provider (whose search and email service a lot of us use) on a computer named after a fruit.
+                    Thankfully
+                    the platform where I tried to sell this book and recover the cost of my first macbook air, gave back
+                    the
+                    updated manuscript. Thankful to the universe for small mercies and for me to be nerd enough to make
+                    some
+                    edits using an IDE (on Linux).</p>
+                <p class="signature">Vijay Menon,</p>
+                <p class="signature">Still, Somewhere in Japan, but with a PR now</p>
+        </section>
+
+        <section id="dedication">
             <h2 class="section-heading">A Dedication</h2>
             <div class="dedication">
                 <p class="line">For My Family,</p>
@@ -445,11 +448,11 @@
             </div>
         </section>
 
-        <section id="_Toc51365548">
+        <section id="part-1-helping-hand">
             <h2 class="part-heading">Part 1 – A Helping Hand</h2>
         </section>
 
-        <section id="_Toc51365549">
+        <section id="chapter-1">
             <h3 class="chapter-heading">Chapter 1. A Chance Encounter</h3>
             <p class="paragraph">It was just a few minutes after half-past-six in the morning and I, Anandapadmanabhan
                 Nair, was on my way to the Shanghai metro line 2 stop of <em>Loushanguan</em> Road. I am guessing here,
@@ -571,7 +574,7 @@
                 shoulder.</p>
         </section>
 
-        <section id="_Toc51365550">
+        <section id="chapter-2">
             <h3 class="chapter-heading">Chapter 2. Back-Breaking Help</h3>
             <p class="paragraph">The bag she was wrestling with was one of those large ugly bags designed fit a large
                 folding bike and it objectively weighed a ton, like it had a dead body in it. I had some difficulty in
@@ -656,7 +659,7 @@
                 don’t get carried away by the mere fact that a (beautiful) girl accepted my help and smiled at me.</p>
         </section>
 
-        <section id="_Toc51365551">
+        <section id="chapter-3">
             <h3 class="chapter-heading">Chapter 3. The Train Ride</h3>
             <p class="paragraph">As I was beating up myself in my head, the train arrived at the platform and Nicole
                 tugged at my arm, indicating that we need to go. I guess I had a blank, brain-dead look on my face and
@@ -726,7 +729,7 @@
                 ended at that exact moment and she noticed my movements.</p>
         </section>
 
-        <section id="_Toc51365552">
+        <section id="chapter-4">
             <h3 class="chapter-heading">Chapter 4. Talking About Life</h3>
             <p class="paragraph">Nicole turned her attention to me and mumbled an apology. I told her it is okay (and
                 almost
@@ -955,7 +958,7 @@
                 and leaned against the safety railing or the safety bar for balance.</p>
         </section>
 
-        <section id="_Toc51365553">
+        <section id="chapter-5">
             <h3 class="chapter-heading">Chapter 5. The Incident</h3>
             <p class="paragraph">Nicole stood up, walked next to me and asked: “So, what is metro surfing?”</p>
             <p class="paragraph">It was clear that she understood my hesitation in talking about whatever reason I had
@@ -1078,7 +1081,7 @@
             <p class="paragraph">She looked up at me, and said, “Let’s go back”.</p>
         </section>
 
-        <section id="_Toc51365554">
+        <section id="chapter-6">
             <h3 class="chapter-heading">Chapter 6. Heading Back Home</h3>
             <p class="paragraph">I heaved the bag to the edge of the platform and we waited for the next train to arrive
                 at the
@@ -1185,7 +1188,7 @@
                 away.</p>
         </section>
 
-        <section id="_Toc51365555">
+        <section id="chapter-7">
             <h3 class="chapter-heading">Chapter 7. She Lives on the 13<sup>th</sup> Floor</h3>
             <p class="paragraph">About five minutes later we reached the apartment block and I woke up with a start. I
                 am not
@@ -1549,7 +1552,7 @@
                 finished with the message.</p>
         </section>
 
-        <section id="_Toc51365556">
+        <section id="chapter-8">
             <h3 class="chapter-heading">Chapter 8. The Grass is Greener</h3>
             <p class="paragraph">“Why do you want to leave China? Don’t you like it here?” Nicole asked me, very
                 abruptly.</p>
@@ -1763,7 +1766,7 @@
                 floor.</p>
         </section>
 
-        <section id="_Toc51365557">
+        <section id="chapter-9">
             <h3 class="chapter-heading">Chapter 9. Heading Back Home</h3>
             <p class="paragraph">As soon as I stepped out of Nicole’s apartment building, I fished out my cigarette
                 pack, lit up
@@ -1902,11 +1905,11 @@
                 than five minutes.</p>
         </section>
 
-        <section id="_Toc51365558">
+        <section id="part-2-wise-men-say">
             <h2 class="part-heading">Part 2 – Wise Men Say</h2>
         </section>
 
-        <section id="_Toc51365559">
+        <section id="chapter-10">
             <h3 class="chapter-heading">Chapter 10. The Cure for A Hangover</h3>
             <p class="paragraph">I was finally fully awake. It was around quarter to seven in the evening. I got out of
                 my bed
@@ -2206,7 +2209,7 @@
                 thought of messages from Nicole and Alice that I didn’t give it any second thoughts.</p>
         </section>
 
-        <section id="_Toc51365560">
+        <section id="chapter-11">
             <h3 class="chapter-heading">Chapter 11. So Jaded…</h3>
             <p class="paragraph">“Is that you Anand? Oh my God! It is you! Why don’t to you join me?” exclaimed a
                 familiar voice
@@ -2379,7 +2382,7 @@
             </p>
         </section>
 
-        <section id="_Toc51365561">
+        <section id="chapter-12">
             <h3 class="chapter-heading">Chapter 12. Sparks in Xintiandi</h3>
             <p class="paragraph">We got out of the restaurant and on to the street but were still holding hands. For
                 some
@@ -3024,7 +3027,7 @@
             <p class="paragraph">I accepted the offer with a shrug and polite nod of the head.</p>
         </section>
 
-        <section id="_Toc51365562">
+        <section id="chapter-13">
             <h3 class="chapter-heading">Chapter 13. The Tango</h3>
             <p class="paragraph">As we waited, I lit two cigarettes and offered one to her. We stood there smoking our
                 cigarettes in silence. I was very much lost in my thoughts. I was not a big believer of God or fate or
@@ -3356,7 +3359,7 @@
                 seeing me. She also seemed to be lost in thought as well.</p>
         </section>
 
-        <section id="_Toc51365563">
+        <section id="chapter-14">
             <h3 class="chapter-heading">Chapter 14. Penny for Your Thoughts</h3>
             <p class="paragraph">I don’t know when I dozed off but when I woke up, we were still in each other’s arms,
                 and I
@@ -3510,7 +3513,7 @@
                 playfully off the bed.</p>
         </section>
 
-        <section id="_Toc51365564">
+        <section id="chapter-15">
             <h3 class="chapter-heading">Chapter 15. Making Pancakes Her Way</h3>
             <p class="paragraph">We dressed up quickly, and when she removed the pullover to dress up, I was reminded
                 how
@@ -3715,7 +3718,7 @@
                 look like you want a smoke. I could use a cigarette myself.”</p>
         </section>
 
-        <section id="_Toc51365565">
+        <section id="chapter-16">
             <h3 class="chapter-heading">Chapter 16. One More Request</h3>
             <p class="paragraph">We took the coffee to the balcony and light up a cigarette each. I sighed a sigh of
                 satisfaction as the cigarette pushed the oxytocin high from sex and serotonin high from the breakfast,
@@ -3951,7 +3954,7 @@
             <p class="paragraph">It was time to open the floodgates and let the messages in.</p>
         </section>
 
-        <section id="_Toc51365566">
+        <section id="chapter-17">
             <h3 class="chapter-heading">Chapter 17. An Evening’s Worth of Text Messages</h3>
             <p class="paragraph">I was half-afraid of what would happen when I turn off the Airplane mode and I
                 discovered that
@@ -4184,7 +4187,7 @@
                 PM. I then covered my eyes with my eye mask and went to sleep. I was out in less than ten minutes.</p>
         </section>
 
-        <section id="_Toc51365567">
+        <section id="chapter-18">
             <h3 class="chapter-heading">Chapter 18. Something Like A Dinner Date</h3>
             <p class="paragraph">I woke up with a start as my 3:00 PM alarm blared. My heart was pounding hard in my
                 chest, and
@@ -4942,11 +4945,11 @@
                 happy. I was certain that we had something to look forward to.</p>
         </section>
 
-        <section id="_Toc51365568">
+        <section id="part-3-all-good-things">
             <h2 class="part-heading">Part 3 – All Good Things…</h2>
         </section>
 
-        <section id="_Toc51365569">
+        <section id="chapter-19">
             <h3 class="chapter-heading">Chapter 19. Fast Forward and Rewind</h3>
             <p class="paragraph">I was sitting in outside Starbucks by the bund. A gust of wind blew a strand of my now
                 long
@@ -5318,11 +5321,7 @@
                 you may understand how everything went downhill for me.</p>
         </section>
 
-        <section id="_Toc51365568">
-            <h2 class="part-heading">Part 3 – All Good Things…</h2>
-        </section>
-
-        <section id="_Toc51365570">
+        <section id="chapter-20">
             <h3 class="chapter-heading">Chapter 20. The Day After the Dinner Date</h3>
             <p class="paragraph">I woke up feeling refreshed the next day, the day after the dinner date, at around 7:00
                 AM,
@@ -5588,7 +5587,7 @@
                 are starting the check in now. Bye XOXOXO</p>
         </section>
 
-        <section id="_Toc51365571">
+        <section id="chapter-21">
             <h3 class="chapter-heading">Chapter 21. The Long Walk</h3>
             <p class="paragraph">I took a Mobike to the metro station and the metro to the Lujiazui station. From there
                 I walked
@@ -5782,7 +5781,7 @@
                 less than five minutes – and complete my message to Jade.</p>
         </section>
 
-        <section id="_Toc51365572">
+        <section id="chapter-22">
             <h3 class="chapter-heading">Chapter 22. The Long Text Message</h3>
             <p class="paragraph">Two gin martinis later, the message was done, and it was way longer than expected. I
                 had
@@ -5911,7 +5910,7 @@
                 night. I guess we all had similar experiences in our life before.</p>
         </section>
 
-        <section id="_Toc51365573">
+        <section id="chapter-23">
             <h3 class="chapter-heading">Chapter 23. Waiting for A Response</h3>
             <p class="paragraph">The next day, I woke up at around 8:00 AM and decided that I should start the day with
                 my usual
@@ -6417,7 +6416,7 @@
                 my arms, kiss her and make love to her.</p>
         </section>
 
-        <section id="_Toc51365574">
+        <section id="chapter-24">
             <h3 class="chapter-heading">Chapter 24. Different Stages of Heartbreak</h3>
             <p class="paragraph">There were no messages from Jade the next day or the day after or the day after that.
                 There
@@ -6860,7 +6859,7 @@
                 like a baby that night.</p>
         </section>
 
-        <section id="_Toc51365575">
+        <section id="chapter-25">
             <h3 class="chapter-heading">Chapter 25. Insanity Comes Calling</h3>
             <p class="paragraph">The next day, I talked to Allen and explained the situation to him, as a sort of
                 heads-up. He
@@ -7269,7 +7268,7 @@
                 moment of clarity.</p>
         </section>
 
-        <section id="_Toc51365576">
+        <section id="chapter-26">
             <h3 class="chapter-heading">Chapter 26. Carpe Diem</h3>
             <p class="paragraph">At times, those seemingly life-changing events, aren't life-changing and seemingly
                 insignificant events turn out to be life-changing. Whatever it may be, logic, reason and root cause
@@ -7454,7 +7453,7 @@
             <p class="the-end">THE END</p>
         </section>
 
-        <section id="_Toc51365577">
+        <section id="epilouge">
             <h2 class="section-heading">Epilogue</h2>
             <p class="paragraph">Eighteen months had passed since that day at Starbucks and I was still on the wagon. I
                 have not
@@ -7513,7 +7512,7 @@
             <p class="paragraph">Jade would have wanted that.</p>
         </section>
 
-        <section id="_Toc51365578">
+        <section id="gratitudes">
             <h2 class="section-heading">Gratitudes</h2>
             <p class="paragraph">I wanted to take this opportunity to thank my friends who gave me feedback for this
                 book while
@@ -7548,7 +7547,7 @@
                 story.</p>
         </section>
 
-        <section id="_Toc51365581">
+        <section id="about-vijay">
             <h2 class="section-heading">About The Author</h2>
             <p class="paragraph">Vijay Menon is a forty-something aspiring writer who has been dabbling with writing for
                 a few
